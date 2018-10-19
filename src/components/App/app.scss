@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  background-color: grey;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  .header {
+    text-align: center;
+    background-color: black;
+    color: white;
+  }
+  .messages {
+    color: yellow;
+    overflow-y: scroll;
+  }
+  .message-input {
+    text-align: center;
+    background-color: black;
+    color: white;
+    &-input {
+      margin: 0.1rem;
+      border: none;
+      background-color: red;
+      color: yellow;
+    }
+  }
+}
